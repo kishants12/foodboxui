@@ -1,0 +1,402 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto condensed', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.landingSection {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navSection{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: orangered;
+  color: white;
+  font-size: large;
+  flex-shrink: 0;
+  gap: 20px;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.brandButton {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.brandButton:hover {
+  opacity: 0.85;
+}
+
+.company span {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.company span:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.mainContainer {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sideBarSection{
+  border-right: 1px solid #333;
+  width: 240px;
+  padding: 0;
+  margin: 0;
+  background-color: #1E1E24;
+  overflow-y: auto;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sideBarSection ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sideBarSection ul li {
+  list-style: none;
+  margin: 0;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  color: #ccc;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sideBarSection ul li:hover {
+  color: white;
+  background-color: rgba(255, 69, 0, 0.15);
+  border-left-color: orangered;
+}
+
+.sideBarSection ul li:active {
+  color: orangered;
+  border-left-color: orangered;
+  background-color: rgba(255, 69, 0, 0.2);
+} 
+
+.sideBarSection button {
+  width: 100%;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  font: inherit;
+}
+
+.loginSection, .registerSection {
+  width : 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   flex-direction: column; 
+  height: 100%;  
+  }
+
+.firmSection{
+  width : 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   flex-direction: column; 
+  height: 100%;  
+  }
+
+  .tableForm{
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border: 2px solid lightgrey;
+    padding: 30px 50px;
+    border-radius: 5px;
+    border-radius: 10px;
+    margin-top:25px;
+    margin-bottom : 25px;
+  }
+  .tableForm input{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    
+
+  }
+
+
+  .authSection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .authContainer {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .authTabs {
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid lightgrey;
+  }
+
+  .authTabs .tab {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #666;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  .authTabs .tab:hover {
+    color: orangered;
+  }
+
+  .authTabs .tab.active {
+    color: orangered;
+    border-bottom-color: orangered;
+  }
+
+.collectionSection{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+  } 
+
+  .defaultFoodView {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    overflow-y: auto;
+    background-color: #f7f7f7;
+  }
+
+  .welcomePanel {
+    max-width: 760px;
+  }
+
+  .welcomePanel h1 {
+    margin: 0;
+    color: #222;
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .welcomePanel p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 12px 0 0;
+  }
+
+  .welcomeActions {
+    margin-top: 20px;
+  }
+
+  .welcomeActions button {
+    border: none;
+    border-radius: 6px;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 11px 18px;
+  }
+
+  .eyebrowText {
+    margin: 0 0 8px;
+    color: orangered;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .foodStats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    gap: 16px;
+    width: 100%;
+  }
+
+  .foodStatCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .foodStatCard span {
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .foodStatCard strong {
+    color: #1e1e24;
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .quickFoodSection {
+    max-width: 760px;
+    padding: 24px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .quickFoodSection h2 {
+    margin: 0 0 14px;
+    color: #222;
+    font-size: 22px;
+  }
+
+  .quickFoodSection ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+    line-height: 1.8;
+  }
+
+  .authform{
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border: 2px solid lightgrey;
+    padding: 30px 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .authform input{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .signupLink button {
+    border: none;
+    background: none;
+    color: orangered;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+  }
+
+  .signupLink button:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .collectionSection {
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .sideBarSection {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .defaultFoodView {
+      padding: 24px 16px;
+    }
+
+    .welcomePanel h1 {
+      font-size: 26px;
+    }
+
+    .foodStats {
+      grid-template-columns: 1fr;
+    }
+  }
