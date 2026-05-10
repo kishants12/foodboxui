@@ -83,8 +83,8 @@ export const LandingPage = () => {
       {showSideBar && <SideBar showAddFirmHandler={showAddFirmHandler}
                                showAddProductHandler={showAddProductHandler}/>}
         {activeForm === '' && <DefaultFoodView showAddFirmHandler={showAddFirmHandler} />}
-        {activeForm === 'login' && <Login showRegisterHandler={showRegisterHandler} />}  
-        {activeForm === 'register' && <Register />}  
+        {activeForm === 'login' && <Login showRegisterHandler={showRegisterHandler}  />}  
+        {activeForm === 'register' && <Register  showLoginHandler ={showLoginHandler} />}  
         {activeForm === 'addfirm' && <AddFirm />}  
         {activeForm === 'addproduct' && <AddProduct />}
          </div>

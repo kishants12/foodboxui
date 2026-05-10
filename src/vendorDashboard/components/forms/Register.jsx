@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { API_URL } from "../../data/ApiPath";
 
-const Register = () => {
+const Register = ({ showLoginHandler }) => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -32,6 +32,7 @@ const Register = () => {
         setUserName("");
         setEmail("");
         setPassword("");
+        showLoginHandler(); // Show login form after successful registration  
       } else {
         // Registration failed, handle error
         setError(data.message || "Registration failed");
